@@ -1,6 +1,7 @@
 Alex Saul Castro Montaño
 
 Commands used:
+Folder server:
 - mkdir Practice2
 - git init
 - echo "readme" > readme.txt
@@ -15,22 +16,28 @@ In folder Clon:
 - git branch
 - git checkout develop
 - git checkout -b "feature1"
-- echo "feature1" > feature.txt
+- echo "feature1" > feature1.txt
 - git add .
 - git commit -m "Added feature1.txt"
-- git checkout develop
+- git push origin feature1
+Folder server:
 - git merge feature1
+In folder Clon:
+- git checkout develop
+- git pull origin develop
 - git branch feature2
 - git branch feature3
 - git checkout feature2
 - echo "feature2" > feature2.txt
 - git add .
 - git commit -m "Added feature2.txt"
-- git checkout develop
-- git merge feature2
+- git push origin feature2
 - git checkout feature3
 - git echo "feature3" > feature3.txt
 - git add .
 - git commit -m "Added feature3.txt"
+- git push origin feature3
+In folder server:
 - git checkout develop
+- git merge feature2
 - git merge feature3
